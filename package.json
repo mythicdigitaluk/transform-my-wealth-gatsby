@@ -1,7 +1,7 @@
 {
-	"name": "gatsby-starter",
+	"name": "transform-my-wealth-gatsby",
 	"private": true,
-	"description": "The PixelsMatter Gatsby starter",
+	"description": "Landing pages for transformmywealth.com",
 	"version": "0.1.0",
 	"author": "PixelsMatter <hello@pixelsmatter.io>",
 	"dependencies": {
@@ -49,9 +49,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pixelsmatter/transform-my-wealth"
+		"url": "https://github.com/pixelsmatter/transform-my-wealth-gatsby"
 	},
 	"bugs": {
-		"url": "https://github.com/pixelsmatter/transform-my-wealth/issues"
+		"url": "https://github.com/pixelsmatter/transform-my-wealth-gatsby/issues"
 	}
 }
