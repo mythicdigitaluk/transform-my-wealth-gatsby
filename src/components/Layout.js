@@ -1,27 +1,25 @@
-
 // Libraries
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Components
-import SEO from '../components/SEO'
-import Footer from './Footer'
-import JsNotice from './JsNotice'
+import SEO from '../components/SEO';
+import Footer from './Footer';
+import JsNotice from './JsNotice';
 
 const Layout = ({ children }) => {
-
 	return (
 		<>
-			<SEO/>
+			<SEO />
 			<main>{children}</main>
-			<JsNotice/>
-			<Footer/>
+			<JsNotice />
+			<Footer />
 		</>
-	)
-}
+	);
+};
 
 Layout.propTypes = {
 	children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -1,11 +1,11 @@
 // Libraries
-import React from 'react'
+import React from 'react';
 
 // Utilities
-import { callingCardHtmlComment } from './src/utilities/callingCard'
+import { callingCardHtmlComment } from './src/utilities/callingCard';
 
 function toHtmlComment(text) {
-	return text.replace(/--+/g, '\u2014')
+	return text.replace(/--+/g, '\u2014');
 }
 
 export const onRenderBody = ({ setPreBodyComponents }) => {
@@ -18,5 +18,5 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
 				__html: `<!--${toHtmlComment(callingCardHtmlComment)}-->`,
 			}}
 		/>,
-	])
-}
+	]);
+};

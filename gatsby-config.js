@@ -1,4 +1,3 @@
-
 module.exports = {
 	siteMetadata: {
 		title: `Transform My Wealth`,
@@ -50,15 +49,15 @@ module.exports = {
 				},
 			},
 		},
-  		{
-    		resolve: `gatsby-plugin-sass`,
-    		options: {
-      			sassOptions: {
-      				data: `@import "${__dirname}/src/scss/vendor/vendor";`,
+		{
+			resolve: `gatsby-plugin-sass`,
+			options: {
+				sassOptions: {
+					data: `@import "${__dirname}/src/scss/vendor/vendor";`,
 					includePaths: [`node_modules`],
-      			},
-    		},
-    	},
+				},
+			},
+		},
 		{
 			resolve: `gatsby-plugin-webfonts`,
 			options: {
@@ -67,15 +66,7 @@ module.exports = {
 					google: [
 						{
 							family: `Poppins`,
-							variants: [
-								`100`,
-								`200`,
-								`300`,
-								`400`,
-								`500`,
-								`600`,
-								`700`,
-							],
+							variants: [`100`, `200`, `300`, `400`, `500`, `600`, `700`],
 						},
 					],
 				},
@@ -84,9 +75,10 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-mailchimp',
 			options: {
-				endpoint: 'https://transformmywealth.us20.list-manage.com/subscribe/post?u=a1145212e07e588dd16f9ca98&amp;id=95871f36be',
+				endpoint:
+					'https://transformmywealth.us20.list-manage.com/subscribe/post?u=a1145212e07e588dd16f9ca98&amp;id=95871f36be',
 				timeout: 3500,
 			},
 		},
 	],
-}
+};

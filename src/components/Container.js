@@ -1,12 +1,9 @@
-
 // Libraries
-import React from 'react'
-import Classnames from 'classnames'
+import React from 'react';
+import Classnames from 'classnames';
 
 const Container = ({ children, fullWidth }) => (
-	<div className={Classnames(['container', {'container--full-width': fullWidth}])}>
-		{children}
-	</div>
-)
+	<div className={Classnames(['container', { 'container--full-width': fullWidth }])}>{children}</div>
+);
 
-export default Container
+export default Container;

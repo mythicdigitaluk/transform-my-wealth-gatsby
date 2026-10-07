@@ -1,59 +1,56 @@
-
 // Libraries
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { graphql, useStaticQuery } from 'gatsby';
 
 function SEO({ meta, title, description, lang, thumbnail, openGraph, twitterCard, schemaMarkup }) {
-	const { site, defaultThumbnail, logo } = useStaticQuery(
-		graphql`
-	 		query {
-	 			site {
-	 				siteMetadata {
-	 					title
-	 					description
-	 					siteUrl
-	 					humansTxt
-	 					openGraph {
-	 						type
-	 						title
-	 						description
-	 						siteName
-	 						url
-	 					}
-	 					twitterCard {
-	 						card
-	 						title
-	 						description
-	 						creator
-	 						site
-	 						domain
-	 						url
-	 					}
-	 				}
-	 			}
-	 			defaultThumbnail: file(relativePath: { eq: "thumbnail.jpg" }) {
- 					childImageSharp {
- 						sizes(maxWidth: 1200) {
- 							...GatsbyImageSharpSizes
- 						}
- 					}
- 				}
- 				logo: file(base: {eq: "favicon.png"}) {
- 					publicURL
- 				}
-	 		}
- 		`
-	)
+	const { site, defaultThumbnail, logo } = useStaticQuery(graphql`
+		query {
+			site {
+				siteMetadata {
+					title
+					description
+					siteUrl
+					humansTxt
+					openGraph {
+						type
+						title
+						description
+						siteName
+						url
+					}
+					twitterCard {
+						card
+						title
+						description
+						creator
+						site
+						domain
+						url
+					}
+				}
+			}
+			defaultThumbnail: file(relativePath: { eq: "thumbnail.jpg" }) {
+				childImageSharp {
+					sizes(maxWidth: 1200) {
+						...GatsbyImageSharpSizes
+					}
+				}
+			}
+			logo: file(base: { eq: "favicon.png" }) {
+				publicURL
+			}
+		}
+	`);
 
 	const siteMetadata = site?.siteMetadata,
-	_title = title || siteMetadata?.title,
-	_description = description || siteMetadata?.description,
-	_thumbnail = defaultThumbnail.childImageSharp.sizes.src || thumbnail,
-	_logo = logo?.publicURL,
-	siteUrl = siteMetadata?.siteUrl || '',
-	humansTxt = siteMetadata?.humansTxt || ''
+		_title = title || siteMetadata?.title,
+		_description = description || siteMetadata?.description,
+		_thumbnail = defaultThumbnail.childImageSharp.sizes.src || thumbnail,
+		_logo = logo?.publicURL,
+		siteUrl = siteMetadata?.siteUrl || '',
+		humansTxt = siteMetadata?.humansTxt || '';
 
 	// Get current page Open Graph data or fallback
 	const _openGraph = {
@@ -66,7 +63,7 @@ function SEO({ meta, title, description, lang, thumbnail, openGraph, twitterCard
 		image: openGraph?.image || siteMetadata?.openGraph?.image || '',
 		imageWidth: openGraph?.imageWidth || siteMetadata?.openGraph?.imageWidth || '1200',
 		imageHeight: openGraph?.imageHeight || siteMetadata?.openGraph?.imageHeight || '630',
-	}
+	};
 
 	// Get current page Twitter Card data or fallback
 	const _twitterCard = {
@@ -78,18 +75,20 @@ function SEO({ meta, title, description, lang, thumbnail, openGraph, twitterCard
 		domain: twitterCard?.domain || siteMetadata?.twitterCard?.domain || '',
 		url: twitterCard?.url || siteMetadata?.twitterCard?.url || '',
 		imageSrc: twitterCard?.imageSrc || siteMetadata?.twitterCard?.imageSrc || '',
-	}
+	};
 
 	// To-Do: Find a better place for the default data
-	const _schemaMarkup = schemaMarkup ? schemaMarkup : {
-		'@context': `https://schema.org`,
-		'@type': `Organization`,
-		name: `Transform My Wealth`,
-		alternateName: `TMB`,
-		description: `How you can make more revenue online without wasting time or burning cash`,
-		url: `https://transformmywealth.com`,
-		logo: `${siteUrl}${_logo}`,
-	}
+	const _schemaMarkup = schemaMarkup
+		? schemaMarkup
+		: {
+				'@context': `https://schema.org`,
+				'@type': `Organization`,
+				name: `Transform My Wealth`,
+				alternateName: `TMB`,
+				description: `How you can make more revenue online without wasting time or burning cash`,
+				url: `https://transformmywealth.com`,
+				logo: `${siteUrl}${_logo}`,
+			};
 
 	return (
 		<Helmet
@@ -186,11 +185,9 @@ function SEO({ meta, title, description, lang, thumbnail, openGraph, twitterCard
 			].concat(meta)}
 		>
 			{/* Schema Markup */}
-			<script type="application/ld+json">
-				{JSON.stringify(_schemaMarkup)}
-			</script>
+			<script type="application/ld+json">{JSON.stringify(_schemaMarkup)}</script>
 		</Helmet>
-	)
+	);
 }
 
 SEO.defaultProps = {
@@ -198,7 +195,7 @@ SEO.defaultProps = {
 	title: '',
 	description: '',
 	lang: 'en_GB',
-}
+};
 
 SEO.propTypes = {
 	meta: PropTypes.arrayOf(PropTypes.object),
@@ -209,6 +206,6 @@ SEO.propTypes = {
 	openGraph: PropTypes.object,
 	twitterCard: PropTypes.object,
 	schemaMarkup: PropTypes.object,
-}
+};
 
-export default SEO
+export default SEO;

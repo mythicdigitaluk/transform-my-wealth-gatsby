@@ -8,16 +8,16 @@ Gatsby landing pages for the Transform My Wealth video masterclass.
 
 ## Contents
 
-| Path                                                                     | Description                                                                                          |
-| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| [src/pages/](src/pages/)                                                 | Home, masterclass, and 404 pages.                                                                    |
-| [src/components/](src/components/)                                       | Page sections, layout, SEO, and the Mailchimp sign-up modal.                                         |
-| [src/contexts/](src/contexts/)                                           | Sign-up modal open state.                                                                            |
-| [src/scss/](src/scss/)                                                   | Global SCSS. `style.scss` imports abstracts, vendor, base, layouts, components, pages, then themes. |
-| [src/img/](src/img/)                                                     | Favicon, thumbnail, and icons.                                                                       |
-| [src/utilities/callingCard.js](src/utilities/callingCard.js)             | Mythic Digital calling card copy.                                                                    |
-| [static/](static/)                                                       | `humans.txt` and `robots.txt`.                                                                       |
-| [gatsby-config.js](gatsby-config.js)                                     | Site metadata, plugins, and the Mailchimp list endpoint.                                             |
+| Path                                                         | Description                                                                                         |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [src/pages/](src/pages/)                                     | Home, masterclass, and 404 pages.                                                                   |
+| [src/components/](src/components/)                           | Page sections, layout, SEO, and the Mailchimp sign-up modal.                                        |
+| [src/contexts/](src/contexts/)                               | Sign-up modal open state.                                                                           |
+| [src/scss/](src/scss/)                                       | Global SCSS. `style.scss` imports abstracts, vendor, base, layouts, components, pages, then themes. |
+| [src/img/](src/img/)                                         | Favicon, thumbnail, and icons.                                                                      |
+| [src/utilities/callingCard.js](src/utilities/callingCard.js) | Mythic Digital calling card copy.                                                                   |
+| [static/](static/)                                           | `humans.txt` and `robots.txt`.                                                                      |
+| [gatsby-config.js](gatsby-config.js)                         | Site metadata, plugins, and the Mailchimp list endpoint.                                            |
 
 ## Requirements
 
@@ -38,14 +38,14 @@ From the project root:
 
 ## Scripts
 
-| Command           | Description                                     |
-| ----------------- | ----------------------------------------------- |
-| `npm run develop` | Start the local development server.             |
+| Command           | Description                                    |
+| ----------------- | ---------------------------------------------- |
+| `npm run develop` | Start the local development server.            |
 | `npm run start`   | Start the local development server over HTTPS. |
-| `npm run build`   | Build the site for production.                  |
-| `npm run serve`   | Serve the production build.                     |
-| `npm run format`  | Format code with Prettier.                      |
-| `npm run clean`   | Clear the `.cache` and `public` directories.    |
+| `npm run build`   | Build the site for production.                 |
+| `npm run serve`   | Serve the production build.                    |
+| `npm run format`  | Format code with Prettier.                     |
+| `npm run clean`   | Clear the `.cache` and `public` directories.   |
 
 ## Environments
 

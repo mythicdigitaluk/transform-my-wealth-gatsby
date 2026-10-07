@@ -1,4 +1,10 @@
+node_modules
+dist
+build
 .cache
-package.json
+coverage
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.vscode
 public
