@@ -1,10 +1,10 @@
 # Transform My Wealth
 
-![GitHub last commit](https://img.shields.io/github/last-commit/PixelsMatter/transform-my-wealth?color=%23560bad)
-![GitHub repo size](https://img.shields.io/github/repo-size/PixelsMatter/transform-my-wealth?color=%23560bad)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/PixelsMatter/transform-my-wealth/Lighthouse%20CI?color=%23560bad)
+![GitHub last commit](https://img.shields.io/github/last-commit/mythicdigitaluk/transform-my-wealth-gatsby?color=%23560bad)
+![GitHub repo size](https://img.shields.io/github/repo-size/mythicdigitaluk/transform-my-wealth-gatsby?color=%23560bad)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mythicdigitaluk/transform-my-wealth-gatsby/Lighthouse%20CI?color=%23560bad)
 
-Landing pages for [transformmywealth.com](https://transformmywealth.com) which use the [PixelsMatter Gatsby Starter](https://github.com/PixelsMatter/gatsby-starter).
+Landing pages for [transformmywealth.com](https://transformmywealth.com).
 
 
 **Project Status:** Closed

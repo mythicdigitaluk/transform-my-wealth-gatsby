@@ -3,7 +3,7 @@
 	"private": true,
 	"description": "Landing pages for transformmywealth.com",
 	"version": "0.1.0",
-	"author": "PixelsMatter <hello@pixelsmatter.io>",
+	"author": "Mythic Digital <hello@mythic.digital>",
 	"dependencies": {
 		"classnames": "^2.2.6",
 		"gatsby": "^2.26.1",
@@ -35,7 +35,7 @@
 		"gatsby",
 		"template",
 		"starter",
-		"pixelsmatter"
+		"mythic-digital"
 	],
 	"license": "0BSD",
 	"scripts": {
@@ -49,9 +49,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pixelsmatter/transform-my-wealth-gatsby"
+		"url": "https://github.com/mythicdigitaluk/transform-my-wealth-gatsby"
 	},
 	"bugs": {
-		"url": "https://github.com/pixelsmatter/transform-my-wealth-gatsby/issues"
+		"url": "https://github.com/mythicdigitaluk/transform-my-wealth-gatsby/issues"
 	}
 }
